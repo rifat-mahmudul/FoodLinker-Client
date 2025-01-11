@@ -21,7 +21,7 @@ const FaqQuestion = ({question, ans}) => {
             {
                 isOpen 
                 && 
-                <p className="mt-2">{ans}</p>
+                <p className="mt-2 text-gray-400">{ans}</p>
             }
         </div>
     )
