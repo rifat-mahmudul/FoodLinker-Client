@@ -56,10 +56,12 @@ const SignUpForm = () => {
         <div className="flex items-center justify-center min-h-screen">
             
             <div data-aos="fade-left"  data-aos-duration="2000" className='border border-gray-500 shadow-xl rounded-lg w-[90%] sm:w-[500px] p-8 bg-gradient-to-t from-[#0C1725] to-[#0E272B]'>
-                <div className='flex items-center justify-center mb-2'>
-                    <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
-                    <h1 className='font-Rancho text-4xl'>FoodLinker</h1>
-                </div>
+                <Link to='/'>
+                    <div className='flex items-center justify-center mb-2'>
+                        <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
+                        <h1 className='font-Rancho text-4xl'>FoodLinker</h1>
+                    </div>
+                </Link>
                 
                 <div>
                     <h1 className='font-bold text-blue-500 text-4xl text-center mb-6'>Create An Account</h1>
