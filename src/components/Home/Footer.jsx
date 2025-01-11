@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 import Container from "../Shared/Container"
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from '../../assets/food1.png'
+
 
 const Footer = () => {
 
@@ -14,7 +14,7 @@ const Footer = () => {
                 <div>
                     <Link to='/'>
                         <div className='flex space-x-1 items-center justify-center sm:justify-start'>
-                            <img className='h-10' src={logo} alt="logo image" />
+                            <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
                             <h1 className='font-Rancho text-3xl'>FoodLinker</h1>
                         </div>
                     </Link>

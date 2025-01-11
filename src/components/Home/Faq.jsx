@@ -12,13 +12,13 @@ const Faq = () => {
     }, []);
 
     return (
-        <section className="pb-24 pt-8">
+        <section className="pb-24 pt-8 overflow-hidden">
             
             <Title title='Frequently Asked Questions' description=''></Title>
 
             <Container>
 
-                <div data-aos="fade-left"  data-aos-duration="2000" className="p-5 bg-[#0000ff13] mt-10 rounded-lg overflow-hidden">
+                <div data-aos="fade-left"  data-aos-duration="2000" className="p-5 bg-[#0000ff13] mt-10 rounded-lg">
 
                     <div className="bg-[#0000ff0f] p-5 rounded-lg">
 

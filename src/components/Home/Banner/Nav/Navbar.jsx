@@ -1,5 +1,4 @@
 import {Link, useLocation, useNavigate} from 'react-router'
-import logo from '../../../../assets/food1.png'
 import NavItem from './NavItem'
 import { useState } from 'react';
 import { RiMenu3Fill } from "react-icons/ri";
@@ -79,7 +78,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center max-w-[90%] xl:max-w-[1200px] mx-auto '>
                 <Link to='/'>
                     <div className='flex space-x-1 items-center'>
-                        <img className='h-10' src={logo} alt="logo image" />
+                        <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
                         <h1 className='font-Rancho text-3xl'>FoodLinker</h1>
                     </div>
                 </Link>

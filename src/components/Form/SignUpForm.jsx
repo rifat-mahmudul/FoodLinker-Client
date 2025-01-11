@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from 'react-router'
-import logo from '../../assets/food1.png'
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form"
@@ -58,7 +57,7 @@ const SignUpForm = () => {
             
             <div data-aos="fade-left"  data-aos-duration="2000" className='border border-gray-500 shadow-xl rounded-lg w-[90%] sm:w-[500px] p-8 bg-gradient-to-t from-[#0C1725] to-[#0E272B]'>
                 <div className='flex items-center justify-center mb-2'>
-                    <img className='h-10' src={logo} alt="logo image" />
+                    <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
                     <h1 className='font-Rancho text-4xl'>FoodLinker</h1>
                 </div>
                 

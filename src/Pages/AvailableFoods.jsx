@@ -1,7 +1,6 @@
 import LoadingSpinner from "../components/LoadingSpinner";
 import Card from "../components/Shared/Card";
 import Container from "../components/Shared/Container";
-import noDataImg from '../assets/NoData.png';
 import HelmetTitle from "../components/Shared/HelmetTitle";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
@@ -77,7 +76,7 @@ const AvailableFoods = () => {
                 <div>
                     {availableFoods.length === 0 && (
                         <div className="flex items-center justify-center h-[80vh]">
-                            <img className="h-96" src={noDataImg} alt="" />
+                            <img className="h-96" src={"https://i.ibb.co.com/jzM8GWn/NoData.png"} alt="" />
                         </div>
                     )}
                 </div>

@@ -5,7 +5,6 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import Container from "../components/Shared/Container";
 import ManageTableRow from "../components/Table/ManageTableRow";
 import HelmetTitle from "../components/Shared/HelmetTitle";
-import noDataImg from '../assets/NoData.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react"
@@ -41,7 +40,7 @@ const ManageFoods = () => {
                 <div>
                     {foods.length === 0 && (
                         <div className="flex items-center justify-center h-[60vh] mb-10">
-                            <img className="h-96" src={noDataImg} alt="" />
+                            <img className="h-96" src={"https://i.ibb.co.com/jzM8GWn/NoData.png"} alt="" />
                         </div>
                     )}
                 </div> 

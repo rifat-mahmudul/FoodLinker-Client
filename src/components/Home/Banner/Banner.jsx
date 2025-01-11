@@ -1,8 +1,4 @@
 import Container from "../../Shared/Container"
-import img1 from '../../../assets/food1.png'
-import img2 from '../../../assets/food2.png'
-import img3 from '../../../assets/food3.png'
-import img4 from '../../../assets/food4.png'
 import { Link } from "react-router"
 import './banner.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -53,25 +49,25 @@ const Banner = () => {
                         >
                             <SwiperSlide>
                             <div>
-                                <img className="h-96" src={img1} alt="" />
+                                <img className="h-96" src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="" />
                             </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <div>
-                                    <img className="h-96" src={img2} alt="" />
+                                    <img className="h-96" src={"https://i.ibb.co.com/hZVL4Rr/food2.png" } alt="" />
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <div>
-                                    <img className="h-96" src={img3} alt="" />
+                                    <img className="h-96" src={"https://i.ibb.co.com/Yy5SX2T/food3.png" } alt="" />
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <div>
-                                    <img className="h-96" src={img4} alt="" />
+                                    <img className="h-96" src={"https://i.ibb.co.com/7RwnPgX/food4.png" } alt="" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>

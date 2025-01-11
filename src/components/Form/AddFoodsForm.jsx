@@ -1,4 +1,3 @@
-import logo from '../../assets/food1.png'
 import { useForm } from "react-hook-form"
 import DatePicker from "react-datepicker";
 import useAuth from '../../hooks/useAuth';
@@ -61,7 +60,7 @@ const AddFoodsForm = () => {
 
             <div className='shadow-xl rounded-lg w-[90%] lg:w-[900px] p-8 bg-gradient-to-t from-[#0C1725] to-[#0E272B]'>
                 <div data-aos="fade-down"  data-aos-duration="2000" className='flex items-center justify-center mb-2'>
-                    <img className='h-10' src={logo} alt="logo image" />
+                    <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
                     <h1 className='font-Rancho text-4xl'>FoodLinker</h1>
                 </div>
                 
