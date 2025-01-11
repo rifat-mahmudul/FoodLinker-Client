@@ -45,7 +45,7 @@ const AvailableFoods = () => {
                                 Sort
                             </option>
                             <option className="bg-blue-500 text-black" value="dsc">
-                                Sort By DSC (By expire Date)
+                                Sort Expire Date
                             </option>
                         </select>
                     </div>
