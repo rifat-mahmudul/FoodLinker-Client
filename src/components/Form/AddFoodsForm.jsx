@@ -8,9 +8,6 @@ import useAxiosSecure from '../../hooks/useAxiosSecure';
 import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router';
 import { ImSpinner9 } from 'react-icons/im';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react"
 
 const AddFoodsForm = () => {
 
@@ -51,26 +48,22 @@ const AddFoodsForm = () => {
         }
     }
 
-        useEffect(() => {
-                AOS.init();
-        }, []);
-
     return (
         <div className="flex items-center justify-center min-h-screen">
 
             <div className='shadow-xl rounded-lg w-[90%] lg:w-[900px] p-8 bg-gradient-to-t from-[#0C1725] to-[#0E272B]'>
-                <div data-aos="fade-down"  data-aos-duration="2000" className='flex items-center justify-center mb-2'>
+                <div className='flex items-center justify-center mb-2'>
                     <img className='h-10' src={"https://i.ibb.co.com/VMdncbV/food1.png"} alt="logo image" />
                     <h1 className='font-Rancho text-4xl'>FoodLinker</h1>
                 </div>
                 
-                <div data-aos="fade-right"  data-aos-duration="2000">
+                <div>
                     <h1 className='font-bold text-blue-500 text-4xl text-center mb-6'>Add Food</h1>
                 </div>
 
                 <div>
 
-                    <form data-aos="fade-right"  data-aos-duration="2000"  onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
 
                         {/* food name and image */}
                         <div className='flex sm:flex-row flex-col gap-4 justify-between items-center'>

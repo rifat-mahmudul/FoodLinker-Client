@@ -9,8 +9,6 @@ import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router';
 import { ImSpinner9 } from 'react-icons/im';
 import PropTypes from 'prop-types';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const UpdateFoodsForm = ({id}) => {
 
@@ -87,10 +85,6 @@ const UpdateFoodsForm = ({id}) => {
         }
     }, [food.expireDate]); 
 
-    useEffect(() => {
-                AOS.init();
-    }, []);
-
     return (
         <div className="flex items-center justify-center min-h-screen">
 
@@ -106,7 +100,7 @@ const UpdateFoodsForm = ({id}) => {
 
                 <div>
 
-                    <form data-aos="fade-right"  data-aos-duration="2000"  onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
 
                         {/* food name and image */}
                         <div className='flex sm:flex-row flex-col gap-4 justify-between items-center'>

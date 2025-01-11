@@ -1,18 +1,11 @@
 import PropTypes from 'prop-types'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react"
 
 const RequestTableRow = ({item, index}) => {
 
     const {foodImage, foodName, foodQuantity, pickupLocation, status, expireDate, requestDate, donor} = item;
 
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
-        <tr data-aos="fade-left"  data-aos-duration="2000" className="text-center h-20 border-b border-gray-700 text-gray-400 font-semibold">
+        <tr className="text-center h-20 border-b border-gray-700 text-gray-400 font-semibold">
             <td>{index + 1}</td>
             <td>
                 <img className="h-12 w-12 rounded-md mx-auto" src={foodImage} alt="" />

@@ -6,9 +6,6 @@ import Swal from 'sweetalert2'
 import { useMutation } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { Link } from "react-router";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react"
 
 const ManageTableRow = ({item, index, refetch}) => {
 
@@ -45,12 +42,8 @@ const ManageTableRow = ({item, index, refetch}) => {
         }
     }
 
-    useEffect(() => {
-                AOS.init();
-    }, []);
-
     return (
-        <tr data-aos="fade-left"  data-aos-duration="2000" className="text-center h-20 border-b border-gray-700 text-gray-400 font-semibold">
+        <tr className="text-center h-20 border-b border-gray-700 text-gray-400 font-semibold">
             <td>{index + 1}</td>
             <td>
                 <img className="h-12 w-12 rounded-md mx-auto" src={foodImage} alt="" />

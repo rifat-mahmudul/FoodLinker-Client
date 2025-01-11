@@ -5,9 +5,6 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import Container from "../components/Shared/Container";
 import HelmetTitle from "../components/Shared/HelmetTitle";
 import RequestTableRow from "../components/Table/RequestTableRow";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react"
 
 const MyFoodRequest = () => {
 
@@ -23,10 +20,6 @@ const MyFoodRequest = () => {
     })
 
     const requestedFoods = foods.filter((food) => food.status === 'Requested');
-
-    useEffect(() => {
-                AOS.init();
-    }, []);
 
     return (
         <section>
@@ -54,7 +47,7 @@ const MyFoodRequest = () => {
                         <div className="bg-[#0000ff0f] sm:p-5 rounded-lg ">
                             <div className="rounded-t-xl overflow-x-auto lg:overflow-hidden">
                                 <table className="w-full rounded-lg">
-                                    <thead data-aos="fade-right"  data-aos-duration="2000">
+                                    <thead>
                                         <tr className="h-16 bg-sky-700 text-white text-center">
                                             <th>Serial No.</th>
                                             <th>Food Image</th>
