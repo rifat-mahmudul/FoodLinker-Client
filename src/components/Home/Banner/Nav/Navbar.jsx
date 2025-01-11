@@ -40,9 +40,9 @@ const Navbar = () => {
     const navItems = <>
         <NavItem setIsOpen={setIsOpen} address={'/'} navName='Home'></NavItem>
         <NavItem setIsOpen={setIsOpen} address={'/available-foods'} navName='Available Foods'></NavItem>
-        <NavItem setIsOpen={setIsOpen} address={'/add-foods'} navName='Add Food'></NavItem>
-        <NavItem setIsOpen={setIsOpen} address={'/manage-my-foods'} navName='Manage My Foods'></NavItem>
-        <NavItem setIsOpen={setIsOpen} address={'/my-food-request'} navName='My Food Request'></NavItem>
+        {user && <NavItem setIsOpen={setIsOpen} address={'/add-foods'} navName='Add Food'></NavItem>}
+        {user && <NavItem setIsOpen={setIsOpen} address={'/manage-my-foods'} navName='Manage My Foods'></NavItem>}
+        {user && <NavItem setIsOpen={setIsOpen} address={'/my-food-request'} navName='My Food Request'></NavItem>}
 
         <li className='flex items-center space-x-4'>
             {
