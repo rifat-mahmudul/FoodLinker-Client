@@ -19,7 +19,7 @@ const AppRoutes = () => {
                 <Route path="/" element={<Home></Home>}></Route>
                 <Route path="/available-foods" element={<AvailableFoods></AvailableFoods>}></Route>
                 <Route path="/add-foods" element={<PrivateRoutes><AddFoods></AddFoods></PrivateRoutes>}></Route>
-                <Route path="/foodDetails/:id" element={<PrivateRoutes><FoodDetails></FoodDetails></PrivateRoutes>}></Route>
+                <Route path="/foodDetails/:id" element={<FoodDetails></FoodDetails>}></Route>
                 <Route path="/my-food-request" element={<PrivateRoutes><MyFoodRequest></MyFoodRequest></PrivateRoutes>}></Route>
                 <Route path="/manage-my-foods" element={<PrivateRoutes><ManageFoods></ManageFoods></PrivateRoutes>}></Route>
                 <Route path="/update-food/:id" element={<PrivateRoutes><UpdateFood></UpdateFood></PrivateRoutes>}></Route>

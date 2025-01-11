@@ -29,6 +29,11 @@ const RequestModal = ({ isOpen, onClose, food, user }) => {
     }, [food.additionalNotes]);
 
     const handleRequest = async (e) => {
+
+        if(!user){
+            return navigate('/login')
+        }
+
         e.preventDefault();
         const foodData = {
             foodName,
